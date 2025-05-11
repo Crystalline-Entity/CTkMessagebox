@@ -125,7 +125,7 @@ app.mainloop()
   | _master_ | set parent window (optional), the box will spawn at center of the parent window |
   | _width_ | width of the window in px (optional) |
   | _height_ | height of the window in px (optional) |
-  | _position_ | A list containing the x, y position of the window. [Default is (0.5, 0.5)]
+  | _position_ | A list containing the x, y position of the window, relative to master. [Default is (0.5, 0.5)]
   | _fg_color_ | forground color of the messagebox [middle portion] |
   | _bg_color_  | background color of the messagebox |
   | **_title_** | title of the messagebox |
@@ -153,7 +153,7 @@ app.mainloop()
   | _topmost_ | disable the topmost window outside the app (bool) |
   | _sound_ | enable the system bell sound when the window popups (bool) |
   | _justify_ | position the buttons to center/right/left |
-  | _alignment_ | Message alignment, left, center or right.
+  | _msg_anchor_ | Message alignment within the message button. w, e or c |
   | _wraplength_ | change the text wrapping length |
   | _option_focus_ | select an option by default when `Enter` key is pressed |
   | **_fade_in_duration_** | enable a fade-in and fade-out animation (int, default is 0)  |
