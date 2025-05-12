@@ -77,8 +77,8 @@ class CTkMessagebox(CTkToplevel):
             self.spawn_x = int((self.winfo_screenwidth() - self.width) * self.pos_x)
             self.spawn_y = int((self.winfo_screenheight() - self.height) * self.pos_y)
         else:
-            self.spawn_x = int(self.master_window.winfo_width() * self.pos_x + self.master_window.winfo_x() - self.pos_x * self.width + 7)
-            self.spawn_y = int(self.master_window.winfo_height() * self.pos_y + self.master_window.winfo_y() - self.pos_y * self.height + 20)
+            self.spawn_x = int(self.master_window.winfo_width() * self.pos_x + self.master_window.winfo_x() - self.width * self.pos_x + 7)
+            self.spawn_y = int(self.master_window.winfo_height() * self.pos_y + self.master_window.winfo_y() - self.height * self.pos_y + 20)
             
         self.after(10)
         self.geometry(f"{self.width}x{self.height}+{self.spawn_x}+{self.spawn_y}")
