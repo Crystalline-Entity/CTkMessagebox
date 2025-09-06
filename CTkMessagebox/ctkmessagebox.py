@@ -56,7 +56,7 @@ class CTkMessagebox(CTkToplevel):
                  icon_size: tuple = None,
                  corner_radius: int = 15,
                  justify: str = "right",
-                 msg_anchor: str = "c",
+                 msg_anchor: str = "c", #values: c, e or w.
                  font: tuple = None,
                  header: bool = False,
                  topmost: bool = True,
@@ -488,4 +488,5 @@ class CTkMessagebox(CTkToplevel):
 if __name__ == "__main__":
     app = CTkMessagebox()
     app.mainloop()
+
 
