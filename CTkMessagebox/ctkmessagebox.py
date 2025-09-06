@@ -9,7 +9,7 @@ Sep-2025 Kevin Glentworth
 2. Added msg_anchor argument to allow message alignment within the message button.
 3. Forced width and height to be integers. Had position issues if float passed in error.
 4. Changed imports to only import specific modules needed.
-5. Tidied up quotes for strings, changed " to "'
+5. Tidied up quotes for strings, changed " to '.
 """
 
 from customtkinter import CTkToplevel, ThemeManager, CTkFrame, CTkButton, CTkLabel, CTkImage, CTkFont
@@ -488,3 +488,4 @@ class CTkMessagebox(CTkToplevel):
 if __name__ == "__main__":
     app = CTkMessagebox()
     app.mainloop()
+
