@@ -153,7 +153,7 @@ app.mainloop()
   | _topmost_ | disable the topmost window outside the app (bool) |
   | _sound_ | enable the system bell sound when the window popups (bool) |
   | _justify_ | position the buttons to center/right/left |
-  | _msg_anchor_ | message alignment with the message button. Values 'c', 'e' and 'w', default 'c'.
+  | _msg_anchor_ | message alignment within the message button. Values 'c', 'e' and 'w', default 'c'.
   | _wraplength_ | change the text wrapping length |
   | _option_focus_ | select an option by default when `Enter` key is pressed |
   | **_fade_in_duration_** | enable a fade-in and fade-out animation (int, default is 0)  |
